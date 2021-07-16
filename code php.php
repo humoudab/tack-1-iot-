@@ -54,6 +54,19 @@ if ($result->num_rows > 0) {
 		echo "control = ".$row["motor4"]."<br>";
 		echo "control = ".$row["motor5"]."<br>";
 		echo "control = ".$row["motor6"]."<br>";
+	    <script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "9c33caf4-6f32-4a25-ad22-4eb574530f3c", // The ID of this integration.
+      region: "eu-de", // The region your integration is hosted in.
+      serviceInstanceID: "8889d224-e0f5-4383-8253-564776fa7337", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
 		 
     }
   }
